@@ -1,4 +1,7 @@
 
-public class MyInputField : InputFieldOriginal
+namespace InfoMediji.InputField
 {
+    public class MyInputField : InputFieldOriginal
+    {
+    }
 }
