@@ -16,7 +16,12 @@ namespace InfoMediji.InputField
 
         private void Awake()
         {
-            _eventTrigger = gameObject.AddComponent<EventTrigger>();
+            _eventTrigger = GetComponent<EventTrigger>();
+            
+            if (_eventTrigger == null)
+            {
+                _eventTrigger = gameObject.AddComponent<EventTrigger>();
+            }
 
             var down = new EventTrigger.Entry {eventID = EventTriggerType.PointerDown};
             down.callback.AddListener(_ => keyboard.KeyDown(keyCode));
