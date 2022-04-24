@@ -214,7 +214,6 @@ GameObject:
   - component: {fileID: 67808556}
   - component: {fileID: 67808555}
   - component: {fileID: 67808554}
-  - component: {fileID: 67808557}
   m_Layer: 0
   m_Name: ButtonA
   m_TagString: Untagged
@@ -285,7 +284,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 67808555}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562917989}
+        m_TargetAssemblyTypeName: InfoMediji.InputField.VirtualKeyboard, InfoMediji.Runtime
+        m_MethodName: KeyPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: A
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &67808555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,20 +335,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67808552}
   m_CullTransparentMesh: 0
---- !u!114 &67808557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67808552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb9c52509bc4d4c9b261b0430462561, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyboard: {fileID: 1562917989}
-  keyCode: 97
 --- !u!1 &185714981
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +505,6 @@ GameObject:
   - component: {fileID: 296570971}
   - component: {fileID: 296570970}
   - component: {fileID: 296570969}
-  - component: {fileID: 296570972}
   m_Layer: 0
   m_Name: ButtonBackspace
   m_TagString: Untagged
@@ -579,7 +575,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 296570970}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562917989}
+        m_TargetAssemblyTypeName: InfoMediji.InputField.VirtualKeyboard, InfoMediji.Runtime
+        m_MethodName: KeyDelete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &296570970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,20 +626,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296570967}
   m_CullTransparentMesh: 0
---- !u!114 &296570972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 296570967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb9c52509bc4d4c9b261b0430462561, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyboard: {fileID: 1562917989}
-  keyCode: 8
 --- !u!1 &408779099
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +717,6 @@ GameObject:
   - component: {fileID: 549934397}
   - component: {fileID: 549934396}
   - component: {fileID: 549934395}
-  - component: {fileID: 549934398}
   m_Layer: 0
   m_Name: ButtonB
   m_TagString: Untagged
@@ -794,7 +787,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 549934396}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562917989}
+        m_TargetAssemblyTypeName: InfoMediji.InputField.VirtualKeyboard, InfoMediji.Runtime
+        m_MethodName: KeyPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: B
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &549934396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,20 +838,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549934393}
   m_CullTransparentMesh: 0
---- !u!114 &549934398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549934393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb9c52509bc4d4c9b261b0430462561, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyboard: {fileID: 1562917989}
-  keyCode: 98
 --- !u!850595691 &612864299
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -920,7 +911,6 @@ GameObject:
   - component: {fileID: 1292237330}
   - component: {fileID: 1292237329}
   - component: {fileID: 1292237328}
-  - component: {fileID: 1292237331}
   m_Layer: 0
   m_Name: ButtonLeft
   m_TagString: Untagged
@@ -991,7 +981,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1292237329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562917989}
+        m_TargetAssemblyTypeName: InfoMediji.InputField.VirtualKeyboard, InfoMediji.Runtime
+        m_MethodName: KeyLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1292237329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1030,20 +1032,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292237326}
   m_CullTransparentMesh: 0
---- !u!114 &1292237331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292237326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb9c52509bc4d4c9b261b0430462561, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyboard: {fileID: 1562917989}
-  keyCode: 276
 --- !u!1 &1309959182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1044,6 @@ GameObject:
   - component: {fileID: 1309959186}
   - component: {fileID: 1309959185}
   - component: {fileID: 1309959184}
-  - component: {fileID: 1309959187}
   m_Layer: 0
   m_Name: ButtonC
   m_TagString: Untagged
@@ -1127,7 +1114,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1309959185}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562917989}
+        m_TargetAssemblyTypeName: InfoMediji.InputField.VirtualKeyboard, InfoMediji.Runtime
+        m_MethodName: KeyPress
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: C
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1309959185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,20 +1165,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309959182}
   m_CullTransparentMesh: 0
---- !u!114 &1309959187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309959182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb9c52509bc4d4c9b261b0430462561, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyboard: {fileID: 1562917989}
-  keyCode: 99
 --- !u!1 &1312213760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,7 +1427,6 @@ GameObject:
   - component: {fileID: 1550262416}
   - component: {fileID: 1550262415}
   - component: {fileID: 1550262414}
-  - component: {fileID: 1550262417}
   m_Layer: 0
   m_Name: ButtonRight
   m_TagString: Untagged
@@ -1513,7 +1497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1550262415}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1562917989}
+        m_TargetAssemblyTypeName: InfoMediji.InputField.VirtualKeyboard, InfoMediji.Runtime
+        m_MethodName: KeyRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1550262415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1552,20 +1548,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550262412}
   m_CullTransparentMesh: 0
---- !u!114 &1550262417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550262412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb9c52509bc4d4c9b261b0430462561, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  keyboard: {fileID: 1562917989}
-  keyCode: 275
 --- !u!1 &1562917988
 GameObject:
   m_ObjectHideFlags: 0
