@@ -1,6 +1,6 @@
-﻿#The Keyboard Task
+﻿# The Keyboard Task
 
-##Initial Task Description:
+## Initial Task Description:
 
 We have prepared a project template with several buttons and one input field.
 Please check scene called "Scene" in the root of the Assets.
