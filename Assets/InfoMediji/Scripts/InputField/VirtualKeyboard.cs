@@ -61,6 +61,43 @@ namespace InfoMediji.InputField
             }
         }
 
+        [Obsolete("Please use generic KeyDown and KeyUp instead")]
+        public void KeyPress(string c)
+        {
+            var initialCase = currentCase;
+            currentCase = char.IsUpper(c[0]) ? KeyboardCase.Upper : KeyboardCase.Lower;
+            
+            var code = (KeyCode) Enum.Parse(typeof(KeyCode), char.ToUpperInvariant(c[0]).ToString());
+            KeyDown(code);
+            KeyUp(code);
+
+            currentCase = initialCase;
+        }
+
+        [Obsolete("Please use generic KeyDown and KeyUp instead")]
+        public void KeyLeft()
+        {
+            var code = KeyCode.LeftArrow;
+            KeyDown(code);
+            KeyUp(code);
+        }
+
+        [Obsolete("Please use generic KeyDown and KeyUp instead")]
+        public void KeyRight()
+        {
+            var code = KeyCode.RightArrow;
+            KeyDown(code);
+            KeyUp(code);
+        }
+
+        [Obsolete("Please use generic KeyDown and KeyUp instead")]
+        public void KeyDelete()
+        {
+            var code = KeyCode.Backspace;
+            KeyDown(code);
+            KeyUp(code);
+        }
+
         private char ApplyCurrentCase(char c)
         {
             switch (currentCase)
