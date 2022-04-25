@@ -1,4 +1,4 @@
-## Task Description:
+## Task Description
 
 We have prepared a project template with several buttons and one input field.
 Please check scene called "Scene" in the root of the Assets.
@@ -23,7 +23,7 @@ The new extended class (MyInputField) should make the InputField work with the U
 In this project you will also find InputFieldOriginal class, which is just a copy of regular InputField class from the Internet.
 You can use either this class to check what is happening inside, or use the usual from the Unity package.
 
-## Implementation:
+## Implementation
 
 * [`MyInputField`](Assets/InfoMediji/Scripts/InputField/MyInputField.cs) - class is inherited from the unmodified [`InputFieldOriginal`](Assets/InfoMediji/Scripts/InputField/InputFieldOriginal.cs) class.
   Interaction with the input field is done via emulation of real keyboard events by calling of the `KeyPressed` method.
