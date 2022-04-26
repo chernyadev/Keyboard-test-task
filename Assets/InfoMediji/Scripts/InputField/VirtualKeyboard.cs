@@ -120,12 +120,10 @@ namespace InfoMediji.InputField
                 yield break;
             }
 
-            action.Invoke();
-
             while (true)
             {
-                yield return new WaitForSeconds(keystrokeDelay);
                 action.Invoke();
+                yield return new WaitForSeconds(keystrokeDelay);
             }
         }
     }
